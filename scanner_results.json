@@ -1,10 +1,11 @@
 {
- "generated": "2026-11-23T17:23Z",
+ "generated": "2026-11-23T18:04Z",
  "thresholds": [
   40,
   60
  ],
  "closed_only": true,
+ "cot_neutral": 3.0,
  "rows": [
   {
    "symbol": "EURUSD",
@@ -504,6 +505,7 @@
    "cot_net": -144471,
    "cot_change": -6327,
    "cot_pct": 1,
+   "cot_share": -15.5,
    "cot_asof": "2026-11-17",
    "macro_score": -70,
    "rate_diff": -2.09,
@@ -1007,6 +1009,7 @@
    "cot_net": -35520,
    "cot_change": 10279,
    "cot_pct": 35,
+   "cot_share": -12.8,
    "cot_asof": "2026-11-17",
    "macro_score": -3,
    "rate_diff": -0.41,
@@ -1510,6 +1513,7 @@
    "cot_net": -182060,
    "cot_change": -30307,
    "cot_pct": 1,
+   "cot_share": -48.6,
    "cot_asof": "2026-11-17",
    "macro_score": 47,
    "rate_diff": 0.68,
@@ -2013,6 +2017,7 @@
    "cot_net": -117772,
    "cot_change": 6176,
    "cot_pct": 13,
+   "cot_share": -28.6,
    "cot_asof": "2026-11-17",
    "macro_score": 0,
    "rate_diff": 2.44,
@@ -2516,6 +2521,7 @@
    "cot_net": 45048,
    "cot_change": 12456,
    "cot_pct": 22,
+   "cot_share": 12.6,
    "cot_asof": "2026-11-17",
    "macro_score": 28,
    "rate_diff": 1.67,
@@ -3019,6 +3025,7 @@
    "cot_net": 8281,
    "cot_change": -872,
    "cot_pct": 6,
+   "cot_share": 6.6,
    "cot_asof": "2026-11-17",
    "macro_score": 37,
    "rate_diff": 4.16,
@@ -3522,6 +3529,7 @@
    "cot_net": 147615,
    "cot_change": -22341,
    "cot_pct": 11,
+   "cot_share": 27.9,
    "cot_asof": "2026-11-17",
    "macro_score": -50,
    "note": "US real 10y 2.88%, +0.12 in 20d"
@@ -4024,6 +4032,7 @@
    "cot_net": 29143,
    "cot_change": 59038,
    "cot_pct": 88,
+   "cot_share": 1.2,
    "cot_asof": "2026-11-17",
    "macro_score": -24,
    "note": "US real 10y 2.88%, +0.12 in 20d"
@@ -4526,6 +4535,7 @@
    "cot_net": 4305,
    "cot_change": -24826,
    "cot_pct": 20,
+   "cot_share": 1.5,
    "cot_asof": "2026-11-17",
    "macro_score": -24,
    "note": "US real 10y 2.88%, +0.12 in 20d"
@@ -5028,6 +5038,7 @@
    "cot_net": 170,
    "cot_change": -14785,
    "cot_pct": 31,
+   "cot_share": 0.1,
    "cot_asof": "2026-11-17",
    "macro_score": -24,
    "note": "US real 10y 2.88%, +0.12 in 20d"
@@ -5530,6 +5541,7 @@
    "cot_net": -19569,
    "cot_change": 2292,
    "cot_pct": 21,
+   "cot_share": -2.6,
    "cot_asof": "2026-11-17"
   }
  ]
