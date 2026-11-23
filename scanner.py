@@ -23,6 +23,7 @@ WATCH = {
     "CL":     ("Futures", "CL=F",     "CRUDE OIL, LIGHT SWEET", False),
 }
 CLOSED_CANDLES_ONLY = True   # True: ignore the 4H candle still forming, so every cross is confirmed
+COT_NEUTRAL = 3.0   # net position under this % of open interest counts as neutral (a starting guess, worth testing)
 LONG_PCT, SHORT_PCT = 60, 40   # COT percentile thresholds for a bullish / bearish bias
 
 
@@ -32,19 +33,22 @@ def load_cot(years=4):
     df = pd.concat(frames)
     df["date"] = pd.to_datetime(df["As of Date in Form YYYY-MM-DD"])
     df["net"] = df["Noncommercial Positions-Long (All)"] - df["Noncommercial Positions-Short (All)"]
+    df["oi"] = df["Open Interest (All)"]
     return df.sort_values("date")
 
 
 def cot_stats(df, key, invert):
     d = df[df["Market and Exchange Names"].str.contains(key, regex=False)]
-    s = d.groupby("date")["net"].sum().tail(156)  # ~3 years of weekly data
+    g = d.groupby("date")
+    s, oi = g["net"].sum().tail(156), g["oi"].sum().tail(156)   # ~3 years of weekly data
     if len(s) < 20:
         return None
     net, prev = int(s.iloc[-1]), int(s.iloc[-2])
     pct = round(float((s <= net).mean() * 100))
+    share = round(net / float(oi.iloc[-1]) * 100, 1)   # net position as % of open interest
     if invert:
-        pct, net, prev = 100 - pct, -net, -prev
-    return {"net": net, "change": net - prev, "pct": pct, "asof": str(s.index[-1].date())}
+        pct, net, prev, share = 100 - pct, -net, -prev, -share
+    return {"net": net, "change": net - prev, "pct": pct, "share": share, "asof": str(s.index[-1].date())}
 
 
 def ema_stats(ticker):
@@ -162,7 +166,7 @@ def main():
         except Exception as ex:
             print(f"skip {sym}: {ex}")
     out = {"generated": dt.datetime.utcnow().isoformat(timespec="minutes") + "Z",
-           "thresholds": [SHORT_PCT, LONG_PCT], "closed_only": CLOSED_CANDLES_ONLY, "rows": rows}
+           "thresholds": [SHORT_PCT, LONG_PCT], "closed_only": CLOSED_CANDLES_ONLY, "cot_neutral": COT_NEUTRAL, "rows": rows}
     json.dump(out, open("scanner_results.json", "w"), indent=1)
     print(f"{len(rows)} instruments written to scanner_results.json")
 

@@ -59,10 +59,10 @@ svg.ch polyline{fill:none!important}
 <div id="list"></div>
 <details class="more"><summary>Load a results file by hand</summary>
 <p><label class="btn">Choose scanner_results.json<input type="file" id="file" accept=".json" hidden></label></p></details>
-<p class="note">Each row shows the last 120 four-hour candles, about 4 weeks of price, with the 20, 50 and 200 EMA. A cross of the 20 and 50 is the trend signal. The 200 only shows when price is close to it. The three tags show the 4H 20/50 EMA trend, COT positioning and the macro score. A signal needs trend and COT to agree. “Strong” means macro agrees too. Tap a row for the numbers.</p>
+<p class="note">Each row shows the last 120 four-hour candles, about 4 weeks of price, with the 20, 50 and 200 EMA. A cross of the 20 and 50 is the trend signal. The 200 only shows when price is close to it. The three tags show the 4H 20/50 EMA trend, COT positioning and the macro score. A signal needs trend and COT to agree. “Strong” means macro agrees too. COT is long or short by its net position, with a neutral zone near zero. “Crowded” marks positions in the top or bottom 10% of the last 3 years. Tap a row for the numbers.</p>
 </main>
 <script>
-var T=[40,60],M=25,mk="All",only=false,data;
+var T=[40,60],M=25,N=3,mk="All",only=false,data;
 function wk(seed,drift){var p=100,a=[];for(var i=0;i<120;i++){p+=drift+Math.sin(i*seed*3.7)*1.4+Math.cos(i*seed)*0.8;a.push(p)}return a}
 var D=[["EURUSD","Forex","bull",9,1.0842,98450,6200,81,48,1.9,1.2],["GBPUSD","Forex","bull",31,1.2715,21300,-1800,64,22,0.9,0.4],
 ["USDJPY","Forex","bear",4,149.12,-48000,-5200,22,-55,4.1,2.8],["XAUUSD","Forex","bull",58,2338.4,171000,3100,55,35,"US real 10y 1.85%"],
@@ -73,7 +73,7 @@ var DEMO={generated:"sample",rows:D.map(function(d,i){var r={symbol:d[0],market:
 chart:wk(i+2,d[2]=="bull"?0.15:-0.15)};if(typeof d[9]=="string")r.note=d[9];else if(d[9]!=null){r.rate_diff=d[9];r.real_diff=d[10]}return r})};
 data=DEMO;
 function tdir(r){return r.state=="bull"?1:-1}
-function cdir(r){return r.cot_pct>=T[1]?1:r.cot_pct<=T[0]?-1:0}
+function cdir(r){var s=r.cot_share!=null?r.cot_share:(r.cot_pct>=T[1]?99:r.cot_pct<=T[0]?-99:0);return s>=N?1:s<=-N?-1:0}
 function mdir(r){return r.macro_score==null?null:r.macro_score>=M?1:r.macro_score<=-M?-1:0}
 function sig(r){var t=tdir(r);if(cdir(r)!=t)return{k:"mixed",n:0,t:"Mixed"};var s=t==1?"long":"short";
   return mdir(r)==t?{k:s,n:2,t:"Strong "+s}:{k:s,n:1,t:s=="long"?"Long":"Short"}}
@@ -98,17 +98,17 @@ function render(){
     var cp=el("div","chips"),m=mdir(r);
     cp.appendChild(chip(tdir(r)==1?"Trend up":"Trend down",tdir(r)));
     cp.appendChild(chip(cdir(r)==1?"COT long":cdir(r)==-1?"COT short":"COT neutral",cdir(r)));
-    cp.appendChild(chip(m==null?"Macro n/a":m==1?"Macro up":m==-1?"Macro down":"Macro neutral",m||0));
+    cp.appendChild(chip(m==null?"Macro n/a":m==1?"Macro up":m==-1?"Macro down":"Macro neutral",m||0));if(r.cot_pct>=90||r.cot_pct<=10)cp.appendChild(chip(r.cot_pct>=90?"Crowded long":"Crowded short",0));
     sm.appendChild(cp);it.appendChild(sm);
     var d=el("div","det"),hrs=r.since*4;
     var p1=el("p");p1.appendChild(el("b",null,"Trend: "));p1.appendChild(document.createTextNode((r.state=="bull"?"20 EMA above 50 EMA":"20 EMA below 50 EMA")+", crossed "+(hrs<48?hrs+" hours":Math.round(hrs/24)+" days")+" ago. Price "+r.price+(r.ema200?(r.chart[r.chart.length-1]>r.ema200[r.ema200.length-1]?", above the 200 EMA.":", below the 200 EMA."):".")));
-    var p2=el("p");p2.appendChild(el("b",null,"COT: "));p2.appendChild(document.createTextNode("net "+fmt(r.cot_net)+", "+fmt(r.cot_change)+" this week, "+r.cot_pct+"th percentile of the last 3 years."));
+    var p2=el("p");p2.appendChild(el("b",null,"COT: "));p2.appendChild(document.createTextNode("net "+fmt(r.cot_net)+(r.cot_share!=null?" ("+fmt(r.cot_share)+"% of open interest)":"")+", "+fmt(r.cot_change)+" this week, "+r.cot_pct+"th percentile of the last 3 years."));
     var p3=el("p");p3.appendChild(el("b",null,"Macro: "));
     p3.appendChild(document.createTextNode(r.macro_score==null?"not available for this instrument.":r.macro_score+" out of \u00b1100."+(r.rate_diff!=null?" Rate difference "+fmt(r.rate_diff)+", real rate difference "+fmt(r.real_diff)+".":r.note?" "+r.note+".":"")));
     d.appendChild(p1);d.appendChild(p2);d.appendChild(p3);it.appendChild(d);L.appendChild(it)});
   document.getElementById("stamp").textContent=data.generated=="sample"?"Sample data. Live results appear once the scanner has run.":"Updated "+new Date(data.generated).toLocaleString()+(data.closed_only?". Closed 4H candles only.":"");
 }
-function load(txt){try{var d=JSON.parse(txt);if(!d.rows)throw 0;data=d;if(d.thresholds)T=d.thresholds;render()}catch(e){document.getElementById("stamp").textContent="That file isn\u2019t valid scanner output."}}
+function load(txt){try{var d=JSON.parse(txt);if(!d.rows)throw 0;data=d;if(d.thresholds)T=d.thresholds;if(d.cot_neutral!=null)N=d.cot_neutral;render()}catch(e){document.getElementById("stamp").textContent="That file isn\u2019t valid scanner output."}}
 document.getElementById("filters").addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;
   if(b.dataset.m){mk=b.dataset.m;document.querySelectorAll("[data-m]").forEach(function(x){x.setAttribute("aria-pressed",x==b)})}
   else{only=!only;b.setAttribute("aria-pressed",only)}render()});
