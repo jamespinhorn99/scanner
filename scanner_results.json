@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-23T20:52Z",
+ "generated": "2026-11-23T22:34Z",
  "thresholds": [
   40,
   60
@@ -3531,8 +3531,8 @@
    "cot_pct": 11,
    "cot_share": 27.9,
    "cot_asof": "2026-11-17",
-   "macro_score": -50,
-   "note": "US real 10y 2.88%, +0.12 in 20d"
+   "macro_score": -52,
+   "note": "US real 10y 2.77%, +0.13 in 20d"
   },
   {
    "symbol": "ES",
@@ -4034,8 +4034,8 @@
    "cot_pct": 88,
    "cot_share": 1.2,
    "cot_asof": "2026-11-17",
-   "macro_score": -24,
-   "note": "US real 10y 2.88%, +0.12 in 20d"
+   "macro_score": -26,
+   "note": "US real 10y 2.77%, +0.13 in 20d"
   },
   {
    "symbol": "NQ",
@@ -4537,8 +4537,8 @@
    "cot_pct": 20,
    "cot_share": 1.5,
    "cot_asof": "2026-11-17",
-   "macro_score": -24,
-   "note": "US real 10y 2.88%, +0.12 in 20d"
+   "macro_score": -26,
+   "note": "US real 10y 2.77%, +0.13 in 20d"
   },
   {
    "symbol": "YM",
@@ -5040,8 +5040,8 @@
    "cot_pct": 31,
    "cot_share": 0.1,
    "cot_asof": "2026-11-17",
-   "macro_score": -24,
-   "note": "US real 10y 2.88%, +0.12 in 20d"
+   "macro_score": -26,
+   "note": "US real 10y 2.77%, +0.13 in 20d"
   },
   {
    "symbol": "CL",
