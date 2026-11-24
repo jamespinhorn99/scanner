@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-24T22:27Z",
+ "generated": "2026-11-24T22:40Z",
  "thresholds": [
   40,
   60
@@ -37,67 +37,116 @@
  "economy": {
   "USD": {
    "growth": {
-    "value": 1.66,
-    "score": 0.55,
-    "asof": "2026-10-01"
+    "value": 2.07,
+    "score": 0.69,
+    "asof": "2026-07-01",
+    "series": "GDPC1"
    },
-   "n": 1,
-   "score": 55
+   "jobs": {
+    "value": 4.1,
+    "change": -0.3,
+    "score": 0.3,
+    "asof": "2026-10-01",
+    "series": "UNRATE"
+   },
+   "n": 2,
+   "score": 49
   },
   "EUR": {
-   "n": 0,
-   "score": null
+   "growth": {
+    "value": 1.28,
+    "score": 0.43,
+    "asof": "2026-07-01",
+    "series": "CLVMNACSCAB1GQEA19"
+   },
+   "n": 1,
+   "score": 43
   },
   "GBP": {
+   "growth": {
+    "value": 1.17,
+    "score": 0.39,
+    "asof": "2026-04-01",
+    "series": "NGDPRSAXDCGBQ"
+   },
    "jobs": {
     "value": 4.7,
     "change": -0.1,
     "score": 0.1,
-    "asof": "2026-07-01"
+    "asof": "2026-07-01",
+    "series": "LRHUTTTTGBM156S"
    },
-   "n": 1,
-   "score": 10
+   "n": 2,
+   "score": 25
   },
   "JPY": {
+   "growth": {
+    "value": 0.55,
+    "score": 0.18,
+    "asof": "2026-04-01",
+    "series": "NGDPRSAXDCJPQ"
+   },
    "jobs": {
     "value": 2.4,
     "change": -0.2,
     "score": 0.2,
-    "asof": "2026-09-01"
+    "asof": "2026-09-01",
+    "series": "LRHUTTTTJPM156S"
    },
-   "n": 1,
-   "score": 20
+   "n": 2,
+   "score": 19
   },
   "AUD": {
+   "growth": {
+    "value": 2.14,
+    "score": 0.71,
+    "asof": "2026-04-01",
+    "series": "NGDPRSAXDCAUQ"
+   },
    "jobs": {
     "value": 4.7,
     "change": 0.29,
     "score": -0.29,
-    "asof": "2026-09-01"
+    "asof": "2026-09-01",
+    "series": "LRHUTTTTAUM156S"
    },
-   "n": 1,
-   "score": -29
+   "n": 2,
+   "score": 21
   },
   "CAD": {
+   "growth": {
+    "value": 1.13,
+    "score": 0.38,
+    "asof": "2026-04-01",
+    "series": "NGDPRSAXDCCAQ"
+   },
    "jobs": {
     "value": 6.7,
     "change": -0.2,
     "score": 0.2,
-    "asof": "2026-10-01"
+    "asof": "2026-10-01",
+    "series": "LRUNTTTTCAM156S"
    },
-   "n": 1,
-   "score": 20
+   "n": 2,
+   "score": 29
   },
   "CHF": {
-   "n": 0,
-   "score": null
+   "growth": {
+    "value": 2.63,
+    "score": 0.88,
+    "asof": "2026-04-01",
+    "series": "CLVMNACSCAB1GQCH"
+   },
+   "n": 1,
+   "score": 88
   },
   "NZD": {
    "jobs": {
     "value": 5.7,
     "change": 0.4,
     "score": -0.4,
-    "asof": "2026-07-01"
+    "asof": "2026-07-01",
+    "series": "LRHUTTTTNZQ156S"
    },
    "n": 1,
    "score": -40
