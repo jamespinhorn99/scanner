@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-24T21:09Z",
+ "generated": "2026-11-24T22:05Z",
  "thresholds": [
   40,
   60
@@ -26,6 +26,81 @@
    "CAD": 0.419,
    "CHF": 0.948,
    "JPY": 0.318
+  }
+ },
+ "dxy": {
+  "state": "bull",
+  "since": 63,
+  "gap": 0.314,
+  "price": 103.814
+ },
+ "economy": {
+  "USD": {
+   "growth": {
+    "value": 1.66,
+    "score": 0.55,
+    "asof": "2026-10-01"
+   },
+   "n": 1,
+   "score": 55
+  },
+  "EUR": {
+   "n": 0,
+   "score": null
+  },
+  "GBP": {
+   "jobs": {
+    "value": 4.7,
+    "change": -0.1,
+    "score": 0.1,
+    "asof": "2026-07-01"
+   },
+   "n": 1,
+   "score": 10
+  },
+  "JPY": {
+   "jobs": {
+    "value": 2.4,
+    "change": -0.2,
+    "score": 0.2,
+    "asof": "2026-09-01"
+   },
+   "n": 1,
+   "score": 20
+  },
+  "AUD": {
+   "jobs": {
+    "value": 4.7,
+    "change": 0.29,
+    "score": -0.29,
+    "asof": "2026-09-01"
+   },
+   "n": 1,
+   "score": -29
+  },
+  "CAD": {
+   "jobs": {
+    "value": 6.7,
+    "change": -0.2,
+    "score": 0.2,
+    "asof": "2026-10-01"
+   },
+   "n": 1,
+   "score": 20
+  },
+  "CHF": {
+   "n": 0,
+   "score": null
+  },
+  "NZD": {
+   "jobs": {
+    "value": 5.7,
+    "change": 0.4,
+    "score": -0.4,
+    "asof": "2026-07-01"
+   },
+   "n": 1,
+   "score": -40
   }
  },
  "rows": [
@@ -4065,7 +4140,7 @@
    "cot_share": 40.7,
    "cot_asof": "2026-11-17",
    "macro_score": -52,
-   "note": "US real 10y 2.77%, +0.13 in 20d"
+   "note": "US real 10y 2.79%, +0.13 in 20d"
   },
   {
    "symbol": "XAGUSD",
@@ -4568,7 +4643,7 @@
    "cot_share": 14.9,
    "cot_asof": "2026-11-17",
    "macro_score": -52,
-   "note": "US real 10y 2.77%, +0.13 in 20d"
+   "note": "US real 10y 2.79%, +0.13 in 20d"
   },
   {
    "symbol": "HG",
@@ -5572,7 +5647,7 @@
    "cot_share": -4.5,
    "cot_asof": "2026-11-17",
    "macro_score": -26,
-   "note": "US real 10y 2.77%, +0.13 in 20d"
+   "note": "US real 10y 2.79%, +0.13 in 20d"
   },
   {
    "symbol": "NQ",
@@ -6075,7 +6150,7 @@
    "cot_share": 1.5,
    "cot_asof": "2026-11-17",
    "macro_score": -26,
-   "note": "US real 10y 2.77%, +0.13 in 20d"
+   "note": "US real 10y 2.79%, +0.13 in 20d"
   },
   {
    "symbol": "YM",
@@ -6578,7 +6653,7 @@
    "cot_share": 5.3,
    "cot_asof": "2026-11-17",
    "macro_score": -26,
-   "note": "US real 10y 2.77%, +0.13 in 20d"
+   "note": "US real 10y 2.79%, +0.13 in 20d"
   },
   {
    "symbol": "RTY",
@@ -7081,7 +7156,7 @@
    "cot_share": -3.4,
    "cot_asof": "2026-11-17",
    "macro_score": -26,
-   "note": "US real 10y 2.77%, +0.13 in 20d"
+   "note": "US real 10y 2.79%, +0.13 in 20d"
   },
   {
    "symbol": "ZN",
@@ -7584,7 +7659,7 @@
    "cot_share": -16.8,
    "cot_asof": "2026-11-17",
    "macro_score": -26,
-   "note": "US real 10y 2.77%, +0.13 in 20d"
+   "note": "US real 10y 2.79%, +0.13 in 20d"
   },
   {
    "symbol": "BTC",
