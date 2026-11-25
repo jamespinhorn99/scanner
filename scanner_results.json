@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-25T09:17Z",
+ "generated": "2026-11-25T09:27Z",
  "thresholds": [
   40,
   60
@@ -9,20 +9,20 @@
  "strength": {
   "d1": {
    "EUR": 0.187,
-   "GBP": 0.053,
-   "AUD": -0.976,
+   "GBP": 0.176,
+   "AUD": -1.148,
    "NZD": -0.039,
-   "USD": -0.179,
+   "USD": -0.13,
    "CAD": 0.45,
    "CHF": 0.63,
    "JPY": -0.126
   },
   "d5": {
    "EUR": 0.105,
-   "GBP": -0.584,
-   "AUD": -1.957,
+   "GBP": -0.248,
+   "AUD": -2.19,
    "NZD": -0.405,
-   "USD": 0.463,
+   "USD": 0.36,
    "CAD": 0.668,
    "CHF": 1.204,
    "JPY": 0.506
@@ -36,85 +36,28 @@
  },
  "economy": {
   "USD": {
-   "growth": {
-    "value": 2.07,
-    "score": 0.69,
-    "asof": "2026-07-01",
-    "series": "GDPC1",
-    "old": false
-   },
-   "jobs": {
-    "value": 4.1,
-    "change": -0.3,
-    "score": 0.3,
-    "asof": "2026-10-01",
-    "series": "UNRATE",
-    "old": false
-   },
-   "momentum": {
-    "growth_accel": -0.13,
-    "jobs_recent": 0.0,
-    "score": -0.07
-   },
    "surprise": {
-    "score": 1.0
+    "score": 0.24
    },
-   "n": 4,
-   "score": 44
+   "n": 1,
+   "score": 24,
+   "source": "releases"
   },
   "EUR": {
-   "growth": {
-    "value": 1.28,
-    "score": 0.43,
-    "asof": "2026-07-01",
-    "series": "CLVMNACSCAB1GQEA19",
-    "old": false
-   },
-   "jobs": {
-    "value": 6.6,
-    "change": 0.2,
-    "score": -0.2,
-    "asof": "2026-09-01",
-    "series": "ecb:LFSI/M.I9.S.UNEHRT.TOTAL0.15_74.T",
-    "old": false
-   },
-   "momentum": {
-    "growth_accel": 0.1,
-    "jobs_recent": 0.1,
-    "score": -0.05
-   },
    "surprise": {
-    "score": -0.02
+    "score": -0.01
    },
-   "n": 4,
-   "score": 5
+   "n": 1,
+   "score": -1,
+   "source": "releases"
   },
   "GBP": {
-   "growth": {
-    "value": 1.17,
-    "score": 0.39,
-    "asof": "2026-04-01",
-    "series": "NGDPRSAXDCGBQ",
-    "old": false
-   },
-   "jobs": {
-    "value": 4.7,
-    "change": -0.1,
-    "score": 0.1,
-    "asof": "2026-07-01",
-    "series": "LRHUTTTTGBM156S",
-    "old": true
-   },
-   "momentum": {
-    "growth_accel": 0.26,
-    "jobs_recent": -0.2,
-    "score": 0.33
-   },
    "surprise": {
-    "score": 1.0
+    "score": 0.16
    },
-   "n": 4,
-   "score": 39
+   "n": 1,
+   "score": 16,
+   "source": "releases"
   },
   "JPY": {
    "growth": {
@@ -138,115 +81,40 @@
     "score": 0.15
    },
    "n": 3,
+   "source": "FRED",
    "score": 18
   },
   "AUD": {
-   "growth": {
-    "value": 2.14,
-    "score": 0.71,
-    "asof": "2026-04-01",
-    "series": "NGDPRSAXDCAUQ",
-    "old": false
-   },
-   "jobs": {
-    "value": 4.7,
-    "change": 0.29,
-    "score": -0.29,
-    "asof": "2026-09-01",
-    "series": "LRHUTTTTAUM156S",
-    "old": false
-   },
-   "momentum": {
-    "growth_accel": -0.37,
-    "jobs_recent": 0.27,
-    "score": -0.46
-   },
    "surprise": {
-    "score": -1.0
+    "score": 0.12
    },
-   "n": 4,
-   "score": -16
+   "n": 1,
+   "score": 12,
+   "source": "releases"
   },
   "CAD": {
-   "growth": {
-    "value": 1.13,
-    "score": 0.38,
-    "asof": "2026-04-01",
-    "series": "NGDPRSAXDCCAQ",
-    "old": false
-   },
-   "jobs": {
-    "value": 6.7,
-    "change": -0.2,
-    "score": 0.2,
-    "asof": "2026-10-01",
-    "series": "LRUNTTTTCAM156S",
-    "old": false
-   },
-   "momentum": {
-    "growth_accel": 1.07,
-    "jobs_recent": 0.3,
-    "score": 0.2
-   },
    "surprise": {
-    "score": -1.0
+    "score": -0.29
    },
-   "n": 4,
-   "score": 5
+   "n": 1,
+   "score": -29,
+   "source": "releases"
   },
   "CHF": {
-   "growth": {
-    "value": 2.63,
-    "score": 0.88,
-    "asof": "2026-04-01",
-    "series": "CLVMNACSCAB1GQCH",
-    "old": false
-   },
-   "jobs": {
-    "value": 5.1,
-    "change": 0.28,
-    "score": -0.28,
-    "asof": "2026-04-01",
-    "series": "LRUN74TTCHQ156S",
-    "old": false
-   },
-   "momentum": {
-    "growth_accel": 1.92,
-    "jobs_recent": -0.03,
-    "score": 0.53
-   },
    "surprise": {
-    "score": 0.22
+    "score": 0.15
    },
-   "n": 4,
-   "score": 34
+   "n": 1,
+   "score": 15,
+   "source": "releases"
   },
   "NZD": {
-   "growth": {
-    "value": 3.01,
-    "score": 1.0,
-    "asof": "2026-04-01",
-    "series": "NZLGDPRQPSMEI",
-    "old": false
-   },
-   "jobs": {
-    "value": 5.7,
-    "change": 0.4,
-    "score": -0.4,
-    "asof": "2026-07-01",
-    "series": "LRHUTTTTNZQ156S",
-    "old": false
-   },
-   "momentum": {
-    "growth_accel": 0.85,
-    "jobs_recent": 0.1,
-    "score": 0.32
-   },
    "surprise": {
-    "score": -1.0
+    "score": -0.33
    },
-   "n": 4,
-   "score": 9
+   "n": 1,
+   "score": -33,
+   "source": "releases"
   }
  },
  "rates": {
@@ -824,10 +692,10 @@
    "cot_pct": 2,
    "cot_share": -16.5,
    "cot_asof": "2026-11-17",
-   "macro_score": -79,
+   "macro_score": -68,
    "rate_diff": -1.62,
    "real_diff": -1.55,
-   "econ_diff": -39,
+   "econ_diff": -25,
    "strength_gap": 4
   },
   {
@@ -1330,10 +1198,10 @@
    "cot_pct": 34,
    "cot_share": -13.8,
    "cot_asof": "2026-11-17",
-   "macro_score": -6,
+   "macro_score": -8,
    "rate_diff": -0.39,
    "real_diff": 0.25,
-   "econ_diff": -5,
+   "econ_diff": -8,
    "strength_gap": 3
   },
   {
@@ -1836,10 +1704,10 @@
    "cot_pct": 1,
    "cot_share": -48.6,
    "cot_asof": "2026-11-17",
-   "macro_score": -18,
+   "macro_score": 13,
    "rate_diff": 0.68,
    "real_diff": 0.82,
-   "econ_diff": -60,
+   "econ_diff": -12,
    "strength_gap": -1
   },
   {
@@ -2342,10 +2210,10 @@
    "cot_pct": 2,
    "cot_share": -46.1,
    "cot_asof": "2026-11-17",
-   "macro_score": -49,
+   "macro_score": -61,
    "rate_diff": -0.87,
    "real_diff": -0.5,
-   "econ_diff": -35,
+   "econ_diff": -57,
    "strength_gap": 2
   },
   {
@@ -2848,10 +2716,10 @@
    "cot_pct": 13,
    "cot_share": -29.8,
    "cot_asof": "2026-11-17",
-   "macro_score": 58,
+   "macro_score": 42,
    "rate_diff": 2.44,
    "real_diff": 0.46,
-   "econ_diff": 26,
+   "econ_diff": 6,
    "strength_gap": -1
   },
   {
@@ -3354,10 +3222,10 @@
    "cot_pct": 22,
    "cot_share": 12.6,
    "cot_asof": "2026-11-17",
-   "macro_score": 67,
+   "macro_score": 75,
    "rate_diff": 1.67,
    "real_diff": 0.68,
-   "econ_diff": 39,
+   "econ_diff": 53,
    "strength_gap": -5
   },
   {
@@ -3860,10 +3728,10 @@
    "cot_pct": 6,
    "cot_share": 6.6,
    "cot_asof": "2026-11-17",
-   "macro_score": 54,
+   "macro_score": 53,
    "rate_diff": 4.16,
    "real_diff": 1.07,
-   "econ_diff": 10,
+   "econ_diff": 9,
    "strength_gap": -6
   },
   {
@@ -4366,7 +4234,7 @@
    "cot_pct": 16,
    "cot_share": 40.7,
    "cot_asof": "2026-11-17",
-   "macro_score": -72,
+   "macro_score": -57,
    "note": "US real 10y 2.79%, +0.13 in 20d"
   },
   {
@@ -4869,7 +4737,7 @@
    "cot_pct": 3,
    "cot_share": 14.9,
    "cot_asof": "2026-11-17",
-   "macro_score": -72,
+   "macro_score": -57,
    "note": "US real 10y 2.79%, +0.13 in 20d"
   },
   {
@@ -5873,7 +5741,7 @@
    "cot_pct": 51,
    "cot_share": -4.5,
    "cot_asof": "2026-11-17",
-   "macro_score": 14,
+   "macro_score": -16,
    "note": "US real 10y 2.79%, +0.13 in 20d"
   },
   {
@@ -6376,7 +6244,7 @@
    "cot_pct": 20,
    "cot_share": 1.5,
    "cot_asof": "2026-11-17",
-   "macro_score": 14,
+   "macro_score": -16,
    "note": "US real 10y 2.79%, +0.13 in 20d"
   },
   {
@@ -6879,7 +6747,7 @@
    "cot_pct": 47,
    "cot_share": 5.3,
    "cot_asof": "2026-11-17",
-   "macro_score": 14,
+   "macro_score": -16,
    "note": "US real 10y 2.79%, +0.13 in 20d"
   },
   {
@@ -7382,7 +7250,7 @@
    "cot_pct": 61,
    "cot_share": -3.4,
    "cot_asof": "2026-11-17",
-   "macro_score": 14,
+   "macro_score": -16,
    "note": "US real 10y 2.79%, +0.13 in 20d"
   },
   {
@@ -7885,7 +7753,7 @@
    "cot_pct": 3,
    "cot_share": -16.8,
    "cot_asof": "2026-11-17",
-   "macro_score": -66,
+   "macro_score": -36,
    "note": "US real 10y 2.79%, +0.13 in 20d"
   },
   {
