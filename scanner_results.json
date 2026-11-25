@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-25T04:14Z",
+ "generated": "2026-11-25T04:21Z",
  "thresholds": [
   40,
   60
@@ -264,6 +264,15 @@
    "rate_series": "IR3TIB01JPM156N",
    "cpi_series": "bis:WS_LONG_CPI/M.JP.771",
    "old": false
+  },
+  "AUD": {
+   "nom": 4.8,
+   "real": 0.86,
+   "infl": 3.94,
+   "asof": "2026-10-01",
+   "rate_series": "IR3TIB01AUM156N",
+   "cpi_series": "bis:WS_LONG_CPI/M.AU.771",
+   "old": true
   },
   "CAD": {
    "nom": 2.4475,
@@ -1804,6 +1813,9 @@
    "cot_pct": 1,
    "cot_share": -48.6,
    "cot_asof": "2026-11-17",
+   "macro_score": 26,
+   "rate_diff": 0.68,
+   "real_diff": 0.82,
    "strength_gap": -2
   },
   {
