@@ -1,1 +1,55 @@
 date,currency,indicator,actual,forecast,direction
+2026-10-28,AUD,CPI m/m,0.8,0.7,1
+2026-10-28,AUD,CPI y/y,4.3,4.2,1
+2026-10-28,AUD,Trimmed Mean CPI m/m,0.3,0.3,1
+2026-10-28,NZD,Interest Rate Decision,2.75,3.00,1
+2026-10-28,CAD,Interest Rate Decision,2.50,2.50,1
+2026-10-28,USD,Interest Rate Decision,4.00,4.00,1
+2026-10-29,USD,GDP q/q,3.4,3.2,1
+2026-10-29,USD,Core PCE Price Index m/m,0.3,0.3,1
+2026-10-29,EUR,Interest Rate Decision,2.65,2.65,1
+2026-11-03,AUD,Interest Rate Decision,4.85,4.85,1
+2026-11-03,CHF,CPI m/m,0.2,0.0,1
+2026-11-03,USD,JOLTS Job Openings,7.52,7.15,1
+2026-11-03,NZD,Employment Change q/q,-0.1,0.4,1
+2026-11-03,NZD,Unemployment Rate,5.7,5.5,-1
+2026-11-04,EUR,Core CPI Flash y/y,2.5,2.5,1
+2026-11-04,EUR,CPI Flash y/y,4.0,4.0,1
+2026-11-04,USD,ISM Services PMI,54.5,54.8,1
+2026-11-05,GBP,Interest Rate Decision,4.00,4.00,1
+2026-11-06,CAD,Employment Change,-4.7,14.6,1
+2026-11-06,CAD,Unemployment Rate,6.7,6.5,-1
+2026-11-06,USD,Average Hourly Earnings m/m,0.4,0.3,1
+2026-11-06,USD,Non-Farm Payrolls,165,65,1
+2026-11-06,USD,Unemployment Rate,4.1,4.2,-1
+2026-11-06,USD,Prelim UoM Consumer Sentiment,51.0,48.1,1
+2026-11-10,USD,Core CPI m/m,0.3,0.2,1
+2026-11-10,USD,CPI m/m,0.4,0.3,1
+2026-11-12,GBP,GDP m/m,0.2,0.0,1
+2026-11-12,GBP,GDP q/q,0.7,0.7,1
+2026-11-12,USD,Unemployment Claims,200,194,-1
+2026-11-13,USD,Core PPI m/m,0.3,0.3,1
+2026-11-13,USD,PPI m/m,0.3,0.4,1
+2026-11-16,CAD,CPI m/m,0.2,0.3,1
+2026-11-16,CAD,Median CPI y/y,2.0,2.0,1
+2026-11-16,CAD,Trimmed CPI y/y,1.8,1.9,1
+2026-11-17,USD,Core Retail Sales m/m,0.6,0.4,1
+2026-11-17,USD,Retail Sales m/m,0.2,0.1,1
+2026-11-18,AUD,Wage Price Index q/q,1.1,1.0,1
+2026-11-18,GBP,CPI y/y,3.6,3.6,1
+2026-11-19,AUD,Employment Change,-43.5,25.5,1
+2026-11-19,AUD,Unemployment Rate,4.9,4.7,-1
+2026-11-19,USD,Unemployment Claims,203,198,-1
+2026-11-20,GBP,Retail Sales m/m,0.7,0.0,1
+2026-11-23,EUR,French Flash Manufacturing PMI,47.9,49.8,1
+2026-11-23,EUR,French Flash Services PMI,46.6,47.4,1
+2026-11-23,EUR,German Flash Manufacturing PMI,55.0,54.1,1
+2026-11-23,EUR,German Flash Services PMI,54.0,52.4,1
+2026-11-23,GBP,Flash Manufacturing PMI,52.7,53.0,1
+2026-11-23,GBP,Flash Services PMI,52.0,53.0,1
+2026-11-23,USD,Flash Manufacturing PMI,54.5,54.5,1
+2026-11-23,USD,Flash Services PMI,54.7,55.6,1
+2026-11-24,USD,CB Consumer Confidence,103.3,92.4,1
+2026-11-25,AUD,CPI m/m,0.5,0.4,1
+2026-11-25,AUD,CPI y/y,4.9,4.7,1
+2026-11-25,AUD,Trimmed Mean CPI m/m,0.5,0.3,1
