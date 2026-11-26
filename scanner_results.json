@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-26T05:15Z",
+ "generated": "2026-11-26T07:14Z",
  "thresholds": [
   40,
   60
@@ -8,24 +8,24 @@
  "cot_neutral": 3.0,
  "strength": {
   "d1": {
-   "EUR": -0.133,
-   "GBP": -0.21,
-   "AUD": 0.226,
-   "NZD": 0.148,
-   "USD": -0.255,
-   "CAD": 0.165,
-   "CHF": 0.344,
-   "JPY": -0.285
+   "EUR": -0.14,
+   "GBP": -0.213,
+   "AUD": 0.644,
+   "NZD": 0.094,
+   "USD": -0.363,
+   "CAD": 0.081,
+   "CHF": 0.247,
+   "JPY": -0.35
   },
   "d5": {
-   "EUR": -0.182,
-   "GBP": -0.455,
-   "AUD": -1.112,
-   "NZD": -0.459,
-   "USD": -0.172,
-   "CAD": 0.756,
-   "CHF": 1.491,
-   "JPY": 0.133
+   "EUR": -0.284,
+   "GBP": -0.493,
+   "AUD": -1.211,
+   "NZD": -0.896,
+   "USD": 0.041,
+   "CAD": 0.733,
+   "CHF": 1.495,
+   "JPY": 0.614
   }
  },
  "dxy": {
@@ -45,44 +45,27 @@
   },
   "EUR": {
    "surprise": {
-    "score": -0.01
+    "score": -0.1
    },
    "n": 1,
-   "score": -1,
+   "score": -10,
    "source": "releases"
   },
   "GBP": {
    "surprise": {
-    "score": 0.16
+    "score": 0.11
    },
    "n": 1,
-   "score": 16,
+   "score": 11,
    "source": "releases"
   },
   "JPY": {
-   "growth": {
-    "value": 0.55,
-    "score": 0.18,
-    "asof": "2026-04-01",
-    "series": "NGDPRSAXDCJPQ",
-    "old": false
+   "surprise": {
+    "score": -0.21
    },
-   "jobs": {
-    "value": 2.4,
-    "change": -0.2,
-    "score": 0.2,
-    "asof": "2026-09-01",
-    "series": "LRHUTTTTJPM156S",
-    "old": false
-   },
-   "momentum": {
-    "growth_accel": 0.1,
-    "jobs_recent": -0.1,
-    "score": 0.15
-   },
-   "n": 3,
-   "source": "FRED",
-   "score": 18
+   "n": 1,
+   "score": -21,
+   "source": "releases"
   },
   "AUD": {
    "surprise": {
@@ -94,26 +77,26 @@
   },
   "CAD": {
    "surprise": {
-    "score": -0.29
+    "score": -0.04
    },
    "n": 1,
-   "score": -29,
+   "score": -4,
    "source": "releases"
   },
   "CHF": {
+   "surprise": {
+    "score": 0.16
+   },
+   "n": 1,
+   "score": 16,
+   "source": "releases"
+  },
+  "NZD": {
    "surprise": {
     "score": 0.15
    },
    "n": 1,
    "score": 15,
-   "source": "releases"
-  },
-  "NZD": {
-   "surprise": {
-    "score": -0.32
-   },
-   "n": 1,
-   "score": -32,
    "source": "releases"
   }
  },
@@ -692,11 +675,11 @@
    "cot_pct": 2,
    "cot_share": -16.5,
    "cot_asof": "2026-11-17",
-   "macro_score": -71,
+   "macro_score": -78,
    "rate_diff": -1.62,
    "real_diff": -1.55,
-   "econ_diff": -29,
-   "strength_gap": 2
+   "econ_diff": -38,
+   "strength_gap": 3
   },
   {
    "symbol": "GBPUSD",
@@ -1198,11 +1181,11 @@
    "cot_pct": 34,
    "cot_share": -13.8,
    "cot_asof": "2026-11-17",
-   "macro_score": -12,
+   "macro_score": -16,
    "rate_diff": -0.39,
    "real_diff": 0.25,
-   "econ_diff": -12,
-   "strength_gap": 1
+   "econ_diff": -17,
+   "strength_gap": 2
   },
   {
    "symbol": "AUDUSD",
@@ -1708,7 +1691,7 @@
    "rate_diff": 0.68,
    "real_diff": 0.82,
    "econ_diff": -17,
-   "strength_gap": 5
+   "strength_gap": 7
   },
   {
    "symbol": "NZDUSD",
@@ -2210,11 +2193,11 @@
    "cot_pct": 2,
    "cot_share": -46.1,
    "cot_asof": "2026-11-17",
-   "macro_score": -61,
+   "macro_score": -31,
    "rate_diff": -0.87,
    "real_diff": -0.5,
-   "econ_diff": -60,
-   "strength_gap": 3
+   "econ_diff": -13,
+   "strength_gap": 5
   },
   {
    "symbol": "USDJPY",
@@ -2716,11 +2699,11 @@
    "cot_pct": 13,
    "cot_share": -29.8,
    "cot_asof": "2026-11-17",
-   "macro_score": 45,
+   "macro_score": 76,
    "rate_diff": 2.44,
    "real_diff": 0.46,
-   "econ_diff": 10,
-   "strength_gap": 1
+   "econ_diff": 49,
+   "strength_gap": -1
   },
   {
    "symbol": "USDCAD",
@@ -3222,10 +3205,10 @@
    "cot_pct": 22,
    "cot_share": 12.6,
    "cot_asof": "2026-11-17",
-   "macro_score": 75,
+   "macro_score": 61,
    "rate_diff": 1.67,
    "real_diff": 0.68,
-   "econ_diff": 57,
+   "econ_diff": 32,
    "strength_gap": -4
   },
   {
@@ -3731,7 +3714,7 @@
    "macro_score": 56,
    "rate_diff": 4.16,
    "real_diff": 1.07,
-   "econ_diff": 13,
+   "econ_diff": 12,
    "strength_gap": -6
   },
   {
