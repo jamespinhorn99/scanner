@@ -53,3 +53,5 @@ date,currency,indicator,actual,forecast,direction
 2026-11-25,AUD,CPI m/m,0.5,0.4,1
 2026-11-25,AUD,CPI y/y,4.9,4.7,1
 2026-11-25,AUD,Trimmed Mean CPI m/m,0.5,0.3,1
+2026-11-25,USD,Core PCE Price Index m/m,0.3,0.3,1
+2026-11-25,USD,Prelim GDP q/q,4.3,3.5,1
