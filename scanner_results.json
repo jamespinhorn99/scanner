@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-26T20:18Z",
+ "generated": "2026-11-26T20:55Z",
  "thresholds": [
   40,
   60
@@ -11,21 +11,21 @@
    "EUR": 0.055,
    "GBP": 0.058,
    "AUD": 0.257,
-   "NZD": -0.193,
+   "NZD": -0.165,
    "USD": 0.212,
-   "CAD": -0.152,
+   "CAD": -0.145,
    "CHF": -0.324,
-   "JPY": 0.087
+   "JPY": 0.052
   },
   "d5": {
    "EUR": -0.193,
    "GBP": -0.078,
    "AUD": -0.632,
-   "NZD": -0.31,
+   "NZD": -0.372,
    "USD": -0.231,
-   "CAD": 0.406,
+   "CAD": 0.517,
    "CHF": 1.06,
-   "JPY": -0.022
+   "JPY": -0.072
   }
  },
  "dxy": {
@@ -679,7 +679,7 @@
    "rate_diff": -1.62,
    "real_diff": -1.55,
    "econ_diff": -44,
-   "strength_gap": -3
+   "strength_gap": -2
   },
   {
    "symbol": "GBPUSD",
@@ -1185,7 +1185,7 @@
    "rate_diff": -0.39,
    "real_diff": 0.05,
    "econ_diff": -19,
-   "strength_gap": -2
+   "strength_gap": -1
   },
   {
    "symbol": "AUDUSD",
@@ -2703,7 +2703,7 @@
    "rate_diff": 2.44,
    "real_diff": 0.46,
    "econ_diff": 46,
-   "strength_gap": 1
+   "strength_gap": 3
   },
   {
    "symbol": "USDCAD",
