@@ -25,7 +25,7 @@ def series(values, dates):
 
 # ---- one function per source: each returns a dated series of 2-year yields in % ----
 def fred_us():
-    d = pd.read_csv("https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS2")
+    d = pd.read_csv(io.StringIO(get("https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS2")))   # get() has a 30 second time limit
     return series(d.iloc[:, 1], d.iloc[:, 0])
 
 
